@@ -1,0 +1,255 @@
+/* MOBILE VIEW */
+
+@media (max-width: 500px) {
+    html,body{
+      overflow-x: hidden;
+    }
+  
+    .tweet__interaction-buttons-block {
+      width: auto !important;
+    }
+  
+    .layout {
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-template-rows: 1fr 53px;
+  
+      height: 100vh;
+      width: 100vw;
+    }
+  
+    .layout__left-sidebar {
+      display: none;
+    }
+
+    .sidebar-menu {
+      display: none;
+    }
+  
+    .layout__right-sidebar-container {
+      display: none;
+    }
+  
+    .layout__main {
+      grid-row: 1 / span 1;
+
+      border-left: none;
+      border-right: none;
+    }
+  
+    .navigation-page-name_page-pfp-icon {
+      display: block !important;
+  
+      height: 32px;
+      width: 32px;
+  
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  
+    .navigation-page-name_page-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .tweet-userself {
+      display: none !important;
+    }
+  
+  
+    .navbar-bottom-mobile {
+      height: 53px;
+
+      border-top: 1px solid var(--border-main-body);
+      background: var(--main-bg);
+  
+      display: flex;
+      grid-row: 2;
+  
+      position: sticky;
+      bottom: 0;
+    }
+  
+    .navbar-bottom-mobile__block {
+      width: 100%;
+  
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    .create-tweet-mobile-block {
+      display: flex;
+      align-items: center;
+  
+      position: fixed;
+      bottom: 70px;
+      right: 15px;
+    }
+  
+    .create-tweet-mobile-block__img {
+      padding: 17px;
+      border-radius: 50%;
+      background-color: var(--user-accent-clr);
+  
+      display: flex;
+      align-items: center
+    }
+  
+    .create-tweet-mobile-block__img img {
+      height: 25px;
+      width: 25px;
+    }
+  
+    .messages-bottom__block {
+      display: none !important;
+    }
+  }
+
+  /* 681 WIDE SIDES CHANGING */
+@media (max-width: 681px) {
+  
+  .layout {
+    grid-template-columns: 100px auto;
+  }
+
+  .layout__right-sidebar {
+    width: auto;
+  }
+
+}
+
+
+
+/* 1004 PX WIDE */
+@media (max-width: 1004px) {
+  .layout__right-sidebar-container {
+    display: none;
+  }
+
+  .layout {
+    max-width: 700px;
+  }
+}
+
+/* 1074 PX WIDE */
+@media (max-width: 1074px) {
+  .messages-bottom__block {
+    display: none;
+  }
+}
+
+/* 1094 WIDE SIDES CHANGING */
+@media (max-width: 1094px) and (min-width: 681px){
+  .layout {
+    grid-template-columns: 100px 559px 290px;
+  }
+
+  .layout__right-sidebar {
+    width: 290px;
+  }
+}
+
+/* FROM 1281px wide to 500px wide  */
+  /* condensed navbar stays until the view is 500px wide */
+@media (max-width: 1281px) and (min-width: 500px) {
+  .sidebar-menu {
+    width: auto;
+    align-items: center;
+}
+
+.layout__left-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 100vh;
+}
+
+.sidebar-menu__1281w-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sidebar-menu__1281w-item:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: 0.2s;
+    
+}
+
+.sidebar-menu__1281w-item > img {
+    height: 26px;
+    width: 26px;
+}
+
+.sidebar-menu__whole-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sidebar-menu__1281w-button-div {
+    margin-top: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    background-color: var(--user-accent-clr);
+
+    display: flex;
+    align-items: center
+}
+
+.sidebar-menu__1281w-button-div:hover {
+  cursor: pointer;
+}
+
+.sidebar-menu__bottom-profile {
+    justify-content: center;
+}
+
+.sidebar-menu__bottom-profile-img {
+    margin: 0;
+}
+}
+
+  /* the template columns layout stays until the width is 1094px */
+@media (max-width: 1281px) and (min-width: 1094px){
+  .layout {
+    grid-template-columns: 100px 559px 350px;;
+  }
+
+}
+
+/* A separate media query for elements that
+should not be visible moving down the resolution
+spectrum */
+
+/* only left sidebar icons remain 
+  old navbar is completely removed */
+@media (max-width: 1281px) {
+  .sidebar-menu__bottom-content {
+    display: none;
+}
+
+.sidebar-menu__item {
+  display: none;
+}
+
+.sidebar-menu__button-div {
+  display: none;
+}
+
+}

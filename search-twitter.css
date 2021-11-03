@@ -1,0 +1,27 @@
+.search-twitter-block {
+    display: flex;
+    align-items: center;
+    
+    padding: 2px 12px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+
+    background-color: var(--right-side-window-clr);
+    border-radius: 23px;
+    
+}
+
+.search-twitter-block__text {
+    color: var(--right-layout-meta-font);
+    font-size: 15px;
+    font-weight: 400;
+
+    padding: 12px;
+}
+
+.search-twitter-block__icon {
+    height: 18px;
+    width: 32px;
+
+    filter: brightness(0) saturate(100%) invert(72%) sepia(20%) saturate(189%) hue-rotate(167deg) brightness(83%) contrast(83%);
+}

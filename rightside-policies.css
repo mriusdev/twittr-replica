@@ -1,0 +1,35 @@
+.policies__block {
+    margin-top: 13px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    padding: 0 15px;
+
+    width: auto;
+}
+
+.policies__content a, span {
+    font-size: 13px;
+    color: var(--right-layout-meta-font);
+    
+}
+
+.policies__content a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.policies__content {
+    padding-right: 12px;
+}
+
+.policies__more-svg {
+    display: flex;
+    align-items: center;
+}
+
+.policies__more-svg img {
+    margin-left: 3px;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(20%) saturate(189%) hue-rotate(167deg) brightness(83%) contrast(83%);
+}

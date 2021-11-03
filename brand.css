@@ -1,0 +1,28 @@
+
+.brand-logo__block {
+    height: 50px;
+    width: 50px;
+    padding: 13px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.brand-logo__block:hover {
+    background: rgba(107,201,251, 0.1);
+    transition-duration: 0.2s;
+}
+
+
+.brand-logo {
+    height: 28px;
+    width: 28px;
+    
+}
