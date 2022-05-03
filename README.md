@@ -2,6 +2,8 @@
 A website that I recreated in order to practice my CSS skills. Inspired by [this guide from Monsterlessons Academy](https://youtu.be/aQNypoBaUNk)
 
 ![Demo of site](image/image.png)
+
+### [Live Site](https://golden-pegasus-b2aeb6.netlify.app/)
 ## Lessons learned
 - Creating unusual page layouts with grid
 - Further improving flexbox knowledge
